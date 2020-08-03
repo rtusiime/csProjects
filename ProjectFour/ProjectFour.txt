@@ -1,0 +1,69 @@
+Kevin Tusiime
+rtusiime
+31529433
+HW10
+2:00pm - 3:15pm
+
+I collaborated with Chukwubuikem Chikweze
+of lab No: 52728
+ID No: 31531764
+
+
+First, Some EXTRA CREDIT: 
+1. We made a canon that adjusts as the user adjusts the angle before launching. In 
+order to see it work, press start game first and then shift the angle a bit. (5 marks according to Piazza).
+2. We set our background to a beautiful city-scape picture(5 marks according to Piazza).
+3. We set our projectile to a ball that rotates when in flight(10 marks according to Piazza).
+4. We construct a rather lovely brick wall as our target. (TA's discression)
+5. We add sound functionality such that the projectile makes a swoosh sound as it flies and then 
+makes an explosion sound when it hits the wall.
+ 
+
+Instructions: Start by clicking "Start Game" then use the sliders to choose appropriate angle and velocity then click launch.
+After each launch, click the Start Game so that a new wall can be generated and the wall can disappear.
+In order to start a New Game, Click reset. This will reset the scores.
+
+NB: WORKS BEST ON MAXIMUM WINDOW SIZE
+
+Classes: 
+Graphipult: Where all most methods for the projectile and the canvas are.
+BrickWall: Has a method for creating a brick wall.
+WrapLayout: Used to ensure that the buttons rearrange when the window is resized
+MusicClip; Used to implement the sound feature.
+
+GUI was constructed by making a JFrame(called Projectile) and adding two JPanels:
+1 JPanel(Control Panel) contains controls and is at the top of the JFrame, and 
+the other JPanel(Tapestry) contains the canvas(though I called it Tapestry
+because I was having issues with the canvas name for some reason. 
+Tapestry is a synonym for canvas) which will display the simulation.
+The methods for the two JPanels--Control Panel and Tapestry are contained in two inner classes with the same names.
+I limit the user's input in terms of velocity and angle and launch speed 
+to ensure that the projectile will always appear on screen.
+
+
+
+Notes on the GUI controls: 
+
+JSlider Angle: Practically speaking, the firework cannot be deployed at an angle of 0 degrees,
+so to make a simulation more akin to real-life, the angle range has been limited to between
+30 and 89 degrees.
+Adjusting the Angle slider will adjust the canon which will give you an idea of the trajectory of your projectile.
+
+JSlider speed: For practical reasons, the firework should have an initial velocity between 50m/s 
+and 150ms so that it can travel a reasonable distance from the starting point but not so much that
+it goes beyond the display.
+
+
+JButton Launcher: Pressing the launcher button will start the timer, which will then continuously call paint component while updating the 
+necessary coordinates to produce the animation.
+
+JButton reset: Resets the High Score 
+
+Notes on methods:
+
+Tapestry inner Class: 
+
+Notes on Extra Credit work:
+1. Rather than using the usual graphics methods, I have implemented 2DGraphics which allow for more sophisticated manipulation of drawings, such as polygons and beautiful patterns.
+2.
+3.

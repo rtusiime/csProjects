@@ -1,0 +1,10 @@
+This project contains four classes: Card, Deck, Hand, testGame.
+Card class models a real life Card.
+Deck class models a real life Deck.
+Hand class models a real life hand.
+testGame is the driver class. It has pre-written methods to demonstrate all methods of the hand class. Some code has been commented out so as to output a desired result. In order to test those methods, remove the "//".
+I have inserted all necessary comments so my code can be comprehensible.
+The hand class has methods for checking what type of hand it is, and comparing hands to print out the winner. They have also been extensively commented on.
+A few tricks I used that might not seem readily apparent:
+In the event of a hand being a straight flush with a low Ace, my sort method changes "Ace"(which has value 14) to "A"(which has value 1) and uses recursion to resort them.
+In order to demonstrate problem 4, I had to make a second constructor for the hand class which takes a string as its parameter. I then use the charAt method to read each character of the string sequence and use assign it to either the rank or suit of a card within the hand Array.
